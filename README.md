@@ -26,17 +26,6 @@ The buttons appear next to the YouTube logo in the top-left corner, styled with 
 4. Click **Load unpacked** and select the extension folder.  
 5. Open YouTube → You’ll see the navigation buttons next to the logo.
 
----
-
-## 📂 Folder Structure
-`
-youtube-nav-extension/
-├── manifest.json # Extension manifest
-├── buttons.js # Injects the toolbar with buttons
-├── buttons.css # Styling for buttons
-└── Navigation-YouTube-PWA.png # Screenshot
-`
-
 
 ---
 
