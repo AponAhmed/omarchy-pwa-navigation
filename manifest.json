@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube PWA Nav Buttons",
+  "version": "1.0",
+  "description": "Adds Back, Reload, and Forward buttons to YouTube web app",
+  "permissions": ["scripting", "tabs"],
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["buttons.js"],
+      "css": ["buttons.css"],
+      "run_at": "document_end"
+    }
+  ]
+}
