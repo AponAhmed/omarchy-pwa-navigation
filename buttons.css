@@ -4,7 +4,8 @@
   left: 10px;
   display: flex;
   gap: 6px;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(2px);
   padding: 6px 8px;
   border-radius: 10px;
   z-index: 999999;
