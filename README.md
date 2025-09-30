@@ -10,8 +10,11 @@ This extension adds a floating toolbar with **Back**, **Reload**, and **Forward*
 - ⬅️ **Back**: Navigate to the previous page  
 - 🔄 **Reload**: Refresh the current PWA window  
 - ➡️ **Forward**: Navigate to the next page  
+- 🌀 **Loading Indicator**: Visual feedback with a colorful spinning animation around the reload button during page loads
 - 🖱️ **Draggable toolbar** – move it anywhere inside the PWA  
 - 💾 **Site-specific position memory** – each PWA remembers its toolbar position (stored in `localStorage`)  
+- 🎯 **Smart Navigation Detection**: Automatically detects link clicks, back/forward navigation, and form submissions
+- 📱 **SPA Support**: Works seamlessly with both traditional websites and Single Page Applications (SPAs)
 - Simple, modern design with hover effects  
 
 ---
@@ -34,8 +37,21 @@ This extension adds a floating toolbar with **Back**, **Reload**, and **Forward*
 - Click **⬅️ Back** to go to the previous page.  
 - Click **🔄 Reload** to refresh the current page.  
 - Click **➡️ Forward** to go forward in history.  
+- Watch the **colorful loading animation** spin around the reload button while pages load.
 - Drag the toolbar anywhere on the screen.  
 - The toolbar will **remember its position per app/site**.  
+
+---
+
+## 🎨 Loading States
+The extension automatically shows a loading indicator when:
+- 🔗 Clicking any internal link
+- ⬅️➡️ Using back/forward buttons (toolbar or browser)
+- 🔄 Reloading the page
+- 📝 Submitting forms
+- 🔀 SPA route changes (using History API)
+
+The colorful spinning circle provides instant visual feedback that navigation is in progress!
 
 ---
 
