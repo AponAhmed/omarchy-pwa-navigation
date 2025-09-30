@@ -1,4 +1,8 @@
 (function () {
+  if (window.matchMedia("(display-mode: standalone)").matches === false) {
+    return; // Exit if not in PWA mode
+  }
+
   if (document.getElementById("global-nav-buttons")) return; // prevent duplicates
 
   const siteKey = "navButtonsPos:" + location.hostname;
