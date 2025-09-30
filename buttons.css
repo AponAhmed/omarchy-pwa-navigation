@@ -1,16 +1,27 @@
-#yt-nav-buttons {
+#global-nav-buttons {
+  position: fixed;
+  top: 10px;
+  left: 10px;
   display: flex;
   gap: 6px;
-  margin-left: 12px; /* space after YouTube logo */
-  align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 6px 8px;
+  border-radius: 10px;
+  z-index: 999999;
+  cursor: move; /* show drag cursor */
+  opacity: 0.5;
+}
+#global-nav-buttons:hover {
+  opacity: 1;
 }
 
-#yt-nav-buttons .yt-nav-btn {
+.global-nav-btn {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 32px;
   height: 32px;
+  cursor: pointer;
   background: rgba(120,120,120,.2);
   border: 1px solid rgba(120,120,120,.3);
   color: #ffffff7a;
@@ -19,19 +30,13 @@
   transition: background 0.2s, transform 0.2s;
 }
 
-#yt-nav-buttons .yt-nav-btn svg {
-  width: 20px;
-  height: 20px;
-  pointer-events: none;
-}
-
-#yt-nav-buttons .yt-nav-btn:hover {
+.global-nav-btn:hover {
   background: rgba(120,120,120,.3);
   border: 1px solid rgba(120,120,120,.4);
   transform: scale(1.05);
 }
-
-#yt-nav-buttons .yt-nav-btn:active {
-  background: #d0d0d0;
+.global-nav-btn:active {
+  background: rgba(120,120,120,.4);
+  border: 1px solid rgba(120,120,120,.5);
   transform: scale(0.95);
 }
