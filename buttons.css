@@ -7,10 +7,9 @@
   background: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(2px);
   padding: 6px 8px;
-  border-radius: 10px;
-  z-index: 999999;
-  cursor: move; /* show drag cursor */
   border-radius: 20px;
+  z-index: 999999;
+  cursor: move;
   opacity: 0.5;
 }
 #global-nav-buttons:hover {
@@ -28,8 +27,8 @@
   border: 1px solid rgba(120,120,120,.3);
   color: #ffffff7a;
   border-radius: 50%;
-  cursor: pointer;
   transition: background 0.2s, transform 0.2s;
+  position: relative;
 }
 
 .global-nav-btn:hover {
@@ -41,4 +40,24 @@
   background: rgba(120,120,120,.4);
   border: 1px solid rgba(120,120,120,.5);
   transform: scale(0.95);
+}
+
+/* 🔄 Reload Loading Spinner */
+#reload-btn.loading::after {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  border: 3px solid transparent;
+  border-top: 3px solid #f76b9a;
+  border-right: 3px solid #79d2fc;
+  border-bottom: 3px solid #7afa7a;
+  border-left: 3px solid #ffeb3b;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
